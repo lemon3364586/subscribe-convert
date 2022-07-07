@@ -1,0 +1,28 @@
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
+root = true
+
+[*]
+# 设置字符集
+charset = utf-8
+# tab 为 hard-tabs，space 为 soft-tabs
+indent_style = tab
+# 设置整数表示规定每级缩进的列数和 soft-tabs 的宽度（空格数）。如果设定为 tab，则会使用 tab_width 的值（如果已指定）
+# indent_size = 2
+# 设置整数用于指定替代 tab 的列数。默认值就是 indent_size 的值，一般无需指定
+# tab_width = 2
+# 定义换行符，支持 lf、cr 和 crlf。
+end_of_line = lf
+# 设为 true 表示会除去换行行首的任意空白字符，false 反之
+trim_trailing_whitespace = true
+# 设为 true 表明使文件以一个空白行结尾，false 反之
+insert_final_newline = true
+
+[package.json]
+# tab 为 hard-tabs，space 为 soft-tabs
+indent_style = space
+# 设置整数表示规定每级缩进的列数和 soft-tabs 的宽度（空格数）。如果设定为 tab，则会使用 tab_width 的值（如果已指定）
+indent_size = 2
+# 设置整数用于指定替代 tab 的列数。默认值就是 indent_size 的值，一般无需指定
+# tab_width = 2

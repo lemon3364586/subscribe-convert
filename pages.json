@@ -1,0 +1,35 @@
+{
+	"easycom": {
+		/* 以 easycom 模式引入u view-ui */
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		// pages 数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "subscribe-convert"
+			}
+		}
+	],
+	// 全局样式
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		// rpx 计算所支持的最大设备宽度，单位 px
+		"rpxCalcMaxDeviceWidth": 960,
+		// rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px
+		"rpxCalcBaseDeviceWidth": 375,
+		// rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx
+		"rpxCalcIncludeWidth": 750,
+		// (仅 h5 支持)单位 px，当浏览器可见区域宽度大于 maxWidth 时，两侧留白，当小于等于 maxWidth 时，页面铺满
+		"maxWidth": 960,
+		// 编译到 h5 样式，与 app-plus 相同属性会覆盖 app-plus
+		"h5": {
+			// 页面标题栏
+			"titleNView": false
+		}
+	}
+}
